@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-Kapital | Импорт авто из Кореи, Китая, Японии</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex flex-col">
+    <!-- Header -->
+    <header class="py-4 px-6 md:px-12">
+        <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="flex items-center">
+                <div class="logo-car mr-3">
+                    <img src="/assets/logo.png" alt="logo">
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold">M-KAPITAL</h1>
+                    <p class="text-sm">Импорт авто</p>
+                </div>
+            </div>
+            <div class="flags flex mt-2 md:mt-0">
+                <a href="tel:+79255784000" class="mr-2 text-[#b5a86c]">+7 (925) 578-40-00</a>
+                <div class="flex items-center mx-2">
+                    <img src="https://flagcdn.com/w20/kr.png" class="flag-icon" alt="Южная Корея">
+                    <span>Корея</span>
+                </div>
+                <div class="flex items-center mx-2">
+                    <img src="https://flagcdn.com/w20/cn.png" class="flag-icon" alt="Китай">
+                    <span>Китай</span>
+                </div>
+                <div class="flex items-center mx-2">
+                    <img src="https://flagcdn.com/w20/jp.png" class="flag-icon" alt="Япония">
+                    <span>Япония</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow px-6 md:px-12 py-8">
+        <div class="main-content flex flex-col md:flex-row items-center justify-between">
+            <div class="md:w-1/2">
+                <h2 class="text-2xl md:text-4xl font-bold mb-6">Привозим авто под заказ с выгодой до <span class="text-[#b5a86c]">2.000.000 ₽</span> за 15−45 дней!</h2>
+                <ul class="mb-8 space-y-2">
+                    <li class="flex items-center"><i class="fas fa-check text-[#b5a86c] mr-2"></i> Поставка от 14 дней</li>
+                    <li class="flex items-center"><i class="fas fa-check text-[#b5a86c] mr-2"></i> Полная проверка автомобиля перед отправкой</li>
+                    <li class="flex items-center"><i class="fas fa-check text-[#b5a86c] mr-2"></i> Авто под ключ без скрытых доплат</li>
+                </ul>
+                
+                <div class="social-links flex space-x-4 mb-8">
+                    <a href="https://t.me/mkapital88" target="_blank" class="bg-[#b5a86c] text-white p-3 rounded-full w-12 h-12 flex items-center justify-center">
+                        <i class="fab fa-telegram text-xl"></i>
+                    </a>
+                    <a href="tel:+79255784000" class="border border-[#b5a86c] text-[#b5a86c] p-3 rounded-full w-12 h-12 flex items-center justify-center">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                </div>
+                
+                <div class="banner bg-[#1e1e1e] p-6 rounded-lg border border-[#b5a86c] mb-8">
+                    <div class="banner-content">
+                        <img src="https://cdn-icons-png.flaticon.com/512/3652/3652191.png" alt="Доски объявлений" class="top-cars-icon mr-4">
+                        <div>
+                            <h3 class="text-lg font-bold mb-2">ТОП популярных авто с выгодой от <span class="text-[#b5a86c]">500 000 ₽</span></h3>
+                            <p class="text-sm text-gray-400 mb-3">Lexus, Toyota, Hyundai, Kia и другие</p>
+                            <button id="showPopupBtn" class="bg-[#b5a86c] text-white py-2 px-6 rounded-lg font-medium hover:bg-opacity-90 transition flex items-center">
+                                <i class="fas fa-list-ul mr-2"></i> Получить подборку
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="md:w-1/2 flex justify-center">
+                <img src="assets/lexus-ls-500.jpg" alt="Lexus LC 500" class="car-image rounded-lg">
+            </div>
+        </div>
+
+        <!-- Additional content between banner and footer -->
+        <div class="additional-content">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3 class="text-lg font-bold mb-2 text-[#b5a86c]">Прямые поставки</h3>
+                    <p class="text-sm">Работаем напрямую с авторынками Кореи, Китая и Японии, что позволяет предлагать лучшие цены</p>
+                </div>
+                <div class="benefit-card">
+                    <h3 class="text-lg font-bold mb-2 text-[#b5a86c]">Полная документация</h3>
+                    <p class="text-sm">Оформляем все необходимые документы для легального ввоза и регистрации автомобиля в РФ</p>
+                </div>
+                <div class="benefit-card">
+                    <h3 class="text-lg font-bold mb-2 text-[#b5a86c]">Гарантия качества</h3>
+                    <p class="text-sm">Каждый автомобиль проходит тщательную проверку перед отправкой в Россию</p>
+                </div>
+            </div>
+
+            <div class="bg-[#1e1e1e] p-6 rounded-lg mb-8">
+                <div class="why-us-container">
+                    <div class="why-us-text">
+                        <h3 class="text-xl font-bold mb-4">Почему стоит заказывать авто через нас?</h3>
+                        <p class="mb-4">Мы специализируемся на импорте автомобилей из Азии уже более 7 лет. За это время мы отработали все процессы до мелочей и можем гарантировать:</p>
+                        <ul class="space-y-2">
+                            <li class="flex items-start"><i class="fas fa-check text-[#b5a86c] mr-2 mt-1"></i> <span>Честную стоимость без скрытых платежей</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-[#b5a86c] mr-2 mt-1"></i> <span>Соблюдение всех сроков поставка</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-[#b5a86c] mr-2 mt-1"></i> <span>Поддержку на всех этапах сделки</span></li>
+                            <li class="flex items-start"><i class="fas fa-check text-[#b5a86c] mr-2 mt-1"></i> <span>Помощь в выборе оптимального варианта под ваш бюджет</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Icon benefits section -->
+            <div class="bg-[#1e1e1e] p-8 rounded-lg mb-8">
+                <h3 class="text-xl font-bold mb-8 text-center">Наши преимущества</h3>
+                <div class="benefits-icons">
+                    <div class="benefit-icon-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4 class="font-bold mb-1">Гарантия 1 год</h4>
+                        <p class="text-sm text-gray-400">На все поставляемые автомобили</p>
+                    </div>
+                    <div class="benefit-icon-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4 class="font-bold mb-1">Быстрая доставка</h4>
+                        <p class="text-sm text-gray-400">От 14 дней от двери до двери</p>
+                    </div>
+                    <div class="benefit-icon-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4 class="font-bold mb-1">Полная проверка</h4>
+                        <p class="text-sm text-gray-400">Диагностика перед отправкой</p>
+                    </div>
+                    <div class="benefit-icon-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h4 class="font-bold mb-1">Легальное оформление</h4>
+                        <p class="text-sm text-gray-400">Все документы в порядке</p>
+                    </div>
+                    <div class="benefit-icon-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4 class="font-bold mb-1">Поддержка 24/7</h4>
+                        <p class="text-sm text-gray-400">Консультации на всех этапах</p>
+                    </div>
+                    <div class="benefit-icon-item">
+                        <div class="benefit-icon">
+                            <i class="fas fa-percentage"></i>
+                        </div>
+                        <h4 class="font-bold mb-1">Лучшие цены</h4>
+                        <p class="text-sm text-gray-400">За счет прямых поставок</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="px-6 md:px-12 py-6 bg-[#1a1a1a]">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <div class="logo-car mr-3"><img src="/assets/logo.png" alt="logo"></div>
+                <span class="text-sm">M-KAPITAL</span>
+            </div>
+            
+            <div class="text-center md:text-right">
+                <button id="privacyBtn" class="text-sm text-gray-400 hover:text-[#b5a86c] mb-2">Политика конфиденциальности</button>
+                <p class="text-xs text-gray-500">ИП Зубарев Андрей Андреевич. ИНН: 750802503352. Банк: Филиал "Центральный" Банка ВТБ (ПАО), БИК: 044525411, к/с: 30101810145250000411, р/с: 40802810124860000349.</p>
+                <p class="text-xs text-gray-500">Россия, г. Москва, м. Автозаводская, БЦ "Омега Плаза", ул. Ленинская Слобода, д. 19, офис 5037/2</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popup for car selection -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <div class="flex items-center mb-6">
+                <div class="logo-car mr-3">
+                    <img src="/assets/logo.png" alt="logo">
+                </div>
+                <h3 class="text-xl font-bold">M-KAPITAL</h3>
+            </div>
+            
+            <h2 class="text-2xl font-bold mb-4">ТОП авто из Кореи, Китая и Японии с выгодой от <span class="text-[#b5a86c]">500.000 ₽</span></h2>
+            <p class="mb-6">Получите подборку в мессенджере</p>
+            
+            <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                <a href="tel:+79255784000" class="bg-[#b5a86c] text-white py-3 px-6 rounded-lg font-medium text-center hover:bg-opacity-90 transition flex-grow">
+                    <i class="fas fa-phone-alt mr-2"></i> Позвонить
+                </a>
+                <a href="https://t.me/mkapital88" target="_blank" class="bg-[#0088cc] text-white py-3 px-6 rounded-lg font-medium text-center hover:bg-opacity-90 transition flex-grow">
+                    <i class="fab fa-telegram mr-2"></i> Telegram
+                </a>
+            </div>
+            
+            <button id="closePopupBtn" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Popup -->
+    <div id="privacyPopup" class="popup">
+        <div class="popup-content">
+            <div class="flex items-center mb-6">
+                <div class="logo-car mr-3"></div>
+                <h3 class="text-xl font-bold">Политика конфиденциальности</h3>
+            </div>
+            
+            <div class="privacy-content">
+                <h3 class="text-lg font-bold mb-4">1. Общие положения</h3>
+                <p class="mb-4">
+                    1.1. Настоящая Политика конфиденциальности определяет порядок обработки и защиты информации о физических лицах (далее — Пользователи), которая может быть получена ИП Зубарев А.А. (далее — Компания) при использовании услуг, предоставляемых через сайт m-kapital-avto.ru.
+                </p>
+            
+                <h3 class="text-lg font-bold mb-4">2. Состав информации</h3>
+                <p class="mb-4">2.1. Компания может собирать следующую информацию о Пользователях:</p>
+                <ul class="list-disc pl-5 mb-4">
+                    <li>ФИО, контактные данные (телефон, Telegram)</li>
+                    <li>Данные, передаваемые при обращении за услугой подбора и доставки автомобиля</li>
+                    <li>История взаимодействия с Компанией</li>
+                    <li>Иная информация, предоставленная добровольно</li>
+                </ul>
+            
+                <h3 class="text-lg font-bold mb-4">3. Цели сбора информации</h3>
+                <p class="mb-4">3.1. Компания использует полученную информацию для:</p>
+                <ul class="list-disc pl-5 mb-4">
+                    <li>Оказания услуг по подбору и пригону автомобилей из Кореи, Китая и Японии</li>
+                    <li>Обратной связи с Пользователем по предоставленным контактам</li>
+                    <li>Улучшения качества обслуживания и сервисов</li>
+                    <li>Предоставления информации о новостях и предложениях Компании</li>
+                </ul>
+            
+                <h3 class="text-lg font-bold mb-4">4. Защита информации</h3>
+                <p class="mb-4">
+                    4.1. Компания принимает необходимые организационные и технические меры для защиты персональных данных Пользователей от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, а также от иных неправомерных действий.
+                </p>
+            
+                <h3 class="text-lg font-bold mb-4">5. Передача информации третьим лицам</h3>
+                <p class="mb-4">
+                    5.1. Компания не передает персональные данные Пользователей третьим лицам, за исключением случаев, когда это необходимо для исполнения обязательств перед Пользователем (например, для оформления доставки или растаможки автомобиля).
+                </p>
+            
+                <h3 class="text-lg font-bold mb-4">6. Изменение Политики конфиденциальности</h3>
+                <p class="mb-4">
+                    6.1. Компания оставляет за собой право вносить изменения в настоящую Политику конфиденциальности. Новая редакция Политики вступает в силу с момента ее размещения на сайте.
+                </p>
+            
+                <h3 class="text-lg font-bold mb-4">7. Контакты</h3>
+                <p class="mb-4">
+                    7.1. Все предложения или вопросы по настоящей Политике конфиденциальности следует сообщать по телефону: <a href="tel:+79255784000">+7 (925) 578-40-00</a> или через Telegram: <a href="https://t.me/mkapital88" target="_blank">@mkapital88</a>.
+                </p>
+            </div>            
+            
+            <button id="closePrivacyPopupBtn" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+                <i class="fas fa-times text-xl"></i>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
